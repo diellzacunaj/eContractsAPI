@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Public/css/main.css" />
+  <title>Kontrata</title>
+
+</head>
+
+<body onload="populateData2()">
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <h1 id="heading">Kontrata</h1>
+        <div class="wrap-input  bg1">
+          <h3>Prokurimi:</h3>
+          <div class="row">
+            <label for="" id="id" style="visibility: hidden">Hello</label>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="numri_rendor_prokurimit">Nr. rendor i prokurimit</label>
+              <label id="numri_rendor_prokurimit" class="form-control"></label>
+            </div>
+            <div class="col-md-6">
+              <label for="lloji_prokurimit">Lloji i prokurimit</label>
+              <label id="lloji_prokurimit" class="form-control"></label>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="aktiviteti_prokurimit">Aktiviteti i prokurimit</label>
+              <label id="aktiviteti_prokurimit" class="form-control"></label>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-input  bg1">
+          <h3>Datat:</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="data_inicimit_aktivitetit">Data e inicimit tё aktivitetit tё prokurimit</label>
+              <label id="data_inicimit_aktivitetit" class="form-control"></label>
+            </div>
+            <div class="col-md-6">
+              <label for="data_publikimit_shpalljes">Data e publikimit tё shpalljes</label>
+              <br>
+              <label id="data_publikimit_shpalljes" class="form-control"></label>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="data_nenshkrimit">Data e nёnshkrimit tё kontratёs</label>
+              <label class="form-control" id="data_nenshkrimit"></label>
+            </div>
+          </div>
+          <br/>
+          <label>Afatet pёr implementimin e kontratёs</label>
+          <br/>
+          <div class="row" style="align-items: baseline;">
+            <div class="col-md-1">
+              <label>Nga:</label>
+            </div>
+            <div class="col-md-5">
+              <label class="form-control" id="data_fillimit_implementimit"></label>
+            </div>
+            <div class="col-md-1">
+              <label>Deri:</label>
+            </div>
+            <div class="col-md-5">
+              <label class="form-control" id="data_mbarimit_implementimit"></label>
+            </div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Data e pёrmbylljes sё kontratёs(data e pranimit tё pёrkohshёm/preliminar)</label>
+              <label class="form-control" id="data_e_permbylljes_kontrates"></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-input  bg1">
+          <h3>Çmimi dhe tё dhёnat e tjera:</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label>Çmimi i kontratёs(duke pёrfshirё tё gjitha taksat)</label>
+              <label class="form-control" id="Cmimi_kontrates"></label>
+            </div>
+            <div class="col-md-6">
+              <label>Çmimi total i paguar</label>
+              <br>
+              <br>
+              <label class="form-control" id="cmimi_total"></label>
+            </div>
+
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Emri i tё cilit i ёshtё dhёnё kontrata</label>
+              <label class="form-control" id="emri_kontratuesit"></label>
+            </div>
+          </div>
+          <br>
+          <br/>
+        </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="Public/main.js"></script>
+</body>
+
+</html>
